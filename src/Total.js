@@ -1,21 +1,11 @@
-function Total(props) {
-  const values = [
-    0.25, 0.50, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 5, 7, 7, 7, 7, 10, 10, 10
-  ];
+import { formatter } from './util.js'
 
+function Total(props) {
   function add(accumulator, a) {
-    return accumulator + values[a-1];
+    return accumulator + a;
   }
 
-  const sum = props.numlist.reduce(add, 0);
-
-  var formatter = new Intl.NumberFormat('en-US', {
-    style: 'currency',
-    currency: 'USD',
-    // These options are needed to round to whole numbers if that's what you want.
-    //minimumFractionDigits: 0, // (this suffices for whole numbers, but will print 2500.10 as $2,500.1)
-    //maximumFractionDigits: 0, // (causes 2500.99 to be printed as $2,501)
-  });
+  const sum = props.vals.reduce(add, 0);
 
   return (
     <div class="total-container">

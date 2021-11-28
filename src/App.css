@@ -34,7 +34,8 @@ table {
 td {
   width: 50%;
   font-size: 150%;
-  padding: 1em 0.2em;
+  padding: 0em 0.2em;
+  height: 85px;
   font-weight: bolder;
 }
 
@@ -54,6 +55,11 @@ td {
   border: 3px #888 solid;
 }
 
+.button .value {
+  color: #999;
+  font-size: 65%;
+}
+
 td.number {
   background: #97ff94;
 }
@@ -70,4 +76,21 @@ td.clear, td.removelast {
 td.clear:active, td.removelast:active {
   background: #691f1a;
   color: #fff;
+}
+
+td.other {
+  background: #ccc;
+}
+
+td.other label {
+  font-size: 75%;
+}
+
+td.other input {
+  width: 75px;
+  margin-left: .5em;
+}
+
+td.other button {
+  clear: left;
 }

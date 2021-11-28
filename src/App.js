@@ -2,26 +2,26 @@ import './App.css';
 import NumList from './NumList.js'
 import Total from './Total.js'
 import ButtonArea, {Clear, RemoveLast } from './Buttons.js'
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 function App() {
-  const [numlist, updateNumlist] = useState([]);
+  const [vals, setVals] = useState([]);
 
   return (
     <div className="App">
       <table class="header">
         <tr>
           <td rowspan="2">
-            <NumList numlist={numlist} />
-            <Total numlist={numlist} />
+            <NumList vals={vals} />
+            <Total  vals={vals} />
           </td>
-          <Clear updateNumlist={updateNumlist}/>
+          <Clear setVals={setVals}/>
         </tr>
         <tr>
-          <RemoveLast updateNumlist={updateNumlist}/>
+          <RemoveLast setVals={setVals}/>
         </tr>
       </table>
-      <ButtonArea numlist={numlist} updateNumlist={updateNumlist} />
+      <ButtonArea setVals={setVals} />
     </div>
   )
 }
