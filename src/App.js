@@ -1,5 +1,5 @@
 import './App.css';
-import NumList from './NumList.js'
+import ValList from './ValList.js'
 import Total from './Total.js'
 import ButtonArea, {Clear, RemoveLast } from './Buttons.js'
 import React, { useState } from 'react';
@@ -13,7 +13,7 @@ function App() {
         <tbody>
           <tr>
             <td rowSpan="2">
-              <NumList vals={vals} />
+              <ValList vals={vals} />
               <Total  vals={vals} />
             </td>
             <Clear setVals={setVals}/>

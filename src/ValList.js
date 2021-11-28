@@ -1,6 +1,6 @@
 import { getDisplayValue } from './util.js'
 
-function NumList(props) {
+function ValList(props) {
   const vals = props.vals.map(num => getDisplayValue(num));
   return (
     <div className="numlist-container">
@@ -10,4 +10,4 @@ function NumList(props) {
   );
 }
 
-export default NumList;
+export default ValList;
