@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/christmas-store-calc/static/css/main.fd10218e.chunk.css",
-    "main.js": "/christmas-store-calc/static/js/main.ffdd7266.chunk.js",
-    "main.js.map": "/christmas-store-calc/static/js/main.ffdd7266.chunk.js.map",
+    "main.css": "/christmas-store-calc/static/css/main.bb185d87.chunk.css",
+    "main.js": "/christmas-store-calc/static/js/main.6270506a.chunk.js",
+    "main.js.map": "/christmas-store-calc/static/js/main.6270506a.chunk.js.map",
     "runtime-main.js": "/christmas-store-calc/static/js/runtime-main.1503a1b8.js",
     "runtime-main.js.map": "/christmas-store-calc/static/js/runtime-main.1503a1b8.js.map",
     "static/js/2.65029d7b.chunk.js": "/christmas-store-calc/static/js/2.65029d7b.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.4c4dd3b7.chunk.js": "/christmas-store-calc/static/js/3.4c4dd3b7.chunk.js",
     "static/js/3.4c4dd3b7.chunk.js.map": "/christmas-store-calc/static/js/3.4c4dd3b7.chunk.js.map",
     "index.html": "/christmas-store-calc/index.html",
-    "static/css/main.fd10218e.chunk.css.map": "/christmas-store-calc/static/css/main.fd10218e.chunk.css.map",
+    "static/css/main.bb185d87.chunk.css.map": "/christmas-store-calc/static/css/main.bb185d87.chunk.css.map",
     "static/js/2.65029d7b.chunk.js.LICENSE.txt": "/christmas-store-calc/static/js/2.65029d7b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.1503a1b8.js",
     "static/js/2.65029d7b.chunk.js",
-    "static/css/main.fd10218e.chunk.css",
-    "static/js/main.ffdd7266.chunk.js"
+    "static/css/main.bb185d87.chunk.css",
+    "static/js/main.6270506a.chunk.js"
   ]
 }
