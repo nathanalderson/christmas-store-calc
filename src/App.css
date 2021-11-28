@@ -2,15 +2,6 @@
   text-align: center;
 }
 
-.header td {
-  width: 33%;
-}
-
-.testing {
-  float: left;
-  height: 3em;
-}
-
 .label {
   margin-right: .5em;
   font-weight: bolder;
@@ -32,19 +23,24 @@ table {
 td {
   width: 50%;
   font-size: 150%;
-  padding: 1em 1em;
-  border: 3px solid transparent;
+  padding: 1em 0.2em;
   font-weight: bolder;
-  cursor: pointer;
 }
 
-td:hover {
-  border: 3px #888 solid;
-}
-
-td.not-clickable:hover {
+.button {
   border: 3px solid transparent;
-  cursor: initial;
+  cursor: pointer;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                        supported by Chrome, Edge, Opera and Firefox */
+}
+
+.button:hover {
+  border: 3px #888 solid;
 }
 
 td.red {

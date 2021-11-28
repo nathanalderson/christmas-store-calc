@@ -11,12 +11,14 @@ function App() {
     <div className="App">
       <table class="header">
         <tr>
-          <Clear updateNumlist={updateNumlist}/>
-          <td class="not-clickable">
+          <td rowspan="2">
             <NumList numlist={numlist} />
             <Total numlist={numlist} />
           </td>
           <RemoveLast updateNumlist={updateNumlist}/>
+        </tr>
+        <tr>
+          <Clear updateNumlist={updateNumlist}/>
         </tr>
       </table>
       <ButtonArea numlist={numlist} updateNumlist={updateNumlist} />

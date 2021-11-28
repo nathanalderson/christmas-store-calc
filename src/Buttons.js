@@ -59,7 +59,7 @@ function Button(props) {
 
 function RemoveLast(props) {
   return (
-    <td class="button removelast" colspan="2" onClick={ () =>
+    <td class="button removelast" onClick={ () =>
         props.updateNumlist(numlist => numlist.slice(0,-1))
     }>
       REMOVE LAST
@@ -69,7 +69,7 @@ function RemoveLast(props) {
 
 function Clear(props) {
   return (
-    <td class="button clear" colspan="2" onClick={ () =>
+    <td class="button clear" onClick={ () =>
         props.updateNumlist([])
     }>
       CLEAR
