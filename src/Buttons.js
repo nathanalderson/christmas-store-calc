@@ -68,7 +68,9 @@ function Other(props) {
     <td className="other">
       <form>
         <label>Amount:
-          <input name="amount" type="number" id="amount" />
+          <div className="dollar">
+            <input name="amount" type="number" id="amount" />
+          </div>
         </label><br/>
         <button onClick={clickAdd}>Add</button>
         <button onClick={clickRemove}>Remove</button>

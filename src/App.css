@@ -94,3 +94,21 @@ td.other input {
 td.other button {
   clear: left;
 }
+
+.dollar{
+  display: inline-block;
+  position: relative;
+}
+
+.dollar input{
+  padding-left: 15px;
+}
+
+.dollar:before {
+  position: absolute;
+  content: "$";
+  left: 8px;
+  top: 2px;
+  color: #666;
+  font-weight: normal;
+}
