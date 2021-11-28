@@ -5,7 +5,7 @@ import ButtonArea, {Clear, RemoveLast } from './Buttons.js'
 import React, { useState, useEffect } from 'react';
 
 function App() {
-  const [numlist, updateNumlist] = useState([1, 2, 3]);
+  const [numlist, updateNumlist] = useState([]);
 
   return (
     <div className="App">
