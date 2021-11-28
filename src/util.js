@@ -9,7 +9,7 @@ const formatter = new Intl.NumberFormat('en-US', {
 function getDisplayValue(num) {
   if (num < 1) {
     return Math.round(num*100) + "¢";
-  } else if (num % 1 == 0) { // whole number
+  } else if (num % 1 === 0) { // whole number
     return "$" + num;
   } else {
     return "$" + num.toFixed(2);

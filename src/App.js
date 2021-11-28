@@ -9,17 +9,19 @@ function App() {
 
   return (
     <div className="App">
-      <table class="header">
-        <tr>
-          <td rowspan="2">
-            <NumList vals={vals} />
-            <Total  vals={vals} />
-          </td>
-          <Clear setVals={setVals}/>
-        </tr>
-        <tr>
-          <RemoveLast setVals={setVals}/>
-        </tr>
+      <table className="header">
+        <tbody>
+          <tr>
+            <td rowSpan="2">
+              <NumList vals={vals} />
+              <Total  vals={vals} />
+            </td>
+            <Clear setVals={setVals}/>
+          </tr>
+          <tr>
+            <RemoveLast setVals={setVals}/>
+          </tr>
+        </tbody>
       </table>
       <ButtonArea setVals={setVals} />
     </div>

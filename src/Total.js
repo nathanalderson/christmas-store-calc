@@ -8,8 +8,8 @@ function Total(props) {
   const sum = props.vals.reduce(add, 0);
 
   return (
-    <div class="total-container">
-      <span class="output">{ formatter.format(sum) }</span>
+    <div className="total-container">
+      <span className="output">{ formatter.format(sum) }</span>
     </div>
   );
 }
