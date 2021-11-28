@@ -15,10 +15,10 @@ function App() {
             <NumList numlist={numlist} />
             <Total numlist={numlist} />
           </td>
-          <RemoveLast updateNumlist={updateNumlist}/>
+          <Clear updateNumlist={updateNumlist}/>
         </tr>
         <tr>
-          <Clear updateNumlist={updateNumlist}/>
+          <RemoveLast updateNumlist={updateNumlist}/>
         </tr>
       </table>
       <ButtonArea numlist={numlist} updateNumlist={updateNumlist} />
