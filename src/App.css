@@ -26,6 +26,9 @@
 
 table {
   width: 100%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 td {
@@ -51,30 +54,20 @@ td {
   border: 3px #888 solid;
 }
 
-td.red {
-  background: #ff9b94;
-}
-
-td.red:active {
-  background: #691f1a;
-  color: #fff;
-}
-
-td.green {
+td.number {
   background: #97ff94;
 }
 
-td.green:active {
+td.number:active {
   background: #0e450c;
   color: #fff;
 }
 
 td.clear, td.removelast {
-  background: #b30600;
-  color: white;
+  background: #ff9b94;
 }
 
 td.clear:active, td.removelast:active {
-  background: #4a0200;
-  color: white;
+  background: #691f1a;
+  color: #fff;
 }

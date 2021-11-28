@@ -3,44 +3,44 @@ function ButtonArea(props) {
     <div class="button-area">
       <table>
         <tr>
-          <Button updateNumlist={props.updateNumlist} num={1} color="green"/>
-          <Button updateNumlist={props.updateNumlist} num={11} color="green"/>
+          <Button updateNumlist={props.updateNumlist} num={1}/>
+          <Button updateNumlist={props.updateNumlist} num={2}/>
         </tr>
         <tr>
-          <Button updateNumlist={props.updateNumlist} num={2} color="red"/>
-          <Button updateNumlist={props.updateNumlist} num={12} color="green"/>
+          <Button updateNumlist={props.updateNumlist} num={3}/>
+          <Button updateNumlist={props.updateNumlist} num={4}/>
         </tr>
         <tr>
-          <Button updateNumlist={props.updateNumlist} num={3} color="green"/>
-          <Button updateNumlist={props.updateNumlist} num={13} color="green"/>
+          <Button updateNumlist={props.updateNumlist} num={5}/>
+          <Button updateNumlist={props.updateNumlist} num={6}/>
         </tr>
         <tr>
-          <Button updateNumlist={props.updateNumlist} num={4} color="green"/>
-          <Button updateNumlist={props.updateNumlist} num={14} color="red"/>
+          <Button updateNumlist={props.updateNumlist} num={7}/>
+          <Button updateNumlist={props.updateNumlist} num={8}/>
         </tr>
         <tr>
-          <Button updateNumlist={props.updateNumlist} num={5} color="red"/>
-          <Button updateNumlist={props.updateNumlist} num={15} color="red"/>
+          <Button updateNumlist={props.updateNumlist} num={9}/>
+          <Button updateNumlist={props.updateNumlist} num={10}/>
         </tr>
         <tr>
-          <Button updateNumlist={props.updateNumlist} num={6} color="red"/>
-          <Button updateNumlist={props.updateNumlist} num={16} color="red"/>
+          <Button updateNumlist={props.updateNumlist} num={11}/>
+          <Button updateNumlist={props.updateNumlist} num={12}/>
         </tr>
         <tr>
-          <Button updateNumlist={props.updateNumlist} num={7} color="green"/>
-          <Button updateNumlist={props.updateNumlist} num={17} color="red"/>
+          <Button updateNumlist={props.updateNumlist} num={13}/>
+          <Button updateNumlist={props.updateNumlist} num={14}/>
         </tr>
         <tr>
-          <Button updateNumlist={props.updateNumlist} num={8} color="green"/>
-          <Button updateNumlist={props.updateNumlist} num={18} color="green"/>
+          <Button updateNumlist={props.updateNumlist} num={15}/>
+          <Button updateNumlist={props.updateNumlist} num={16}/>
         </tr>
         <tr>
-          <Button updateNumlist={props.updateNumlist} num={9} color="red"/>
-          <Button updateNumlist={props.updateNumlist} num={19} color="green"/>
+          <Button updateNumlist={props.updateNumlist} num={17}/>
+          <Button updateNumlist={props.updateNumlist} num={18}/>
         </tr>
         <tr>
-          <Button updateNumlist={props.updateNumlist} num={10} color="red"/>
-          <Button updateNumlist={props.updateNumlist} num={20} color="green"/>
+          <Button updateNumlist={props.updateNumlist} num={19}/>
+          <Button updateNumlist={props.updateNumlist} num={20}/>
         </tr>
       </table>
     </div>
@@ -49,7 +49,7 @@ function ButtonArea(props) {
 
 function Button(props) {
   return (
-    <td class={`button number ${props.color}`} onClick={ () =>
+    <td class="button number" onClick={ () =>
         props.updateNumlist(numlist => [...numlist, props.num])
     }>
       {props.num}
@@ -72,7 +72,7 @@ function Clear(props) {
     <td class="button clear" onClick={ () =>
         props.updateNumlist([])
     }>
-      CLEAR
+      CLEAR ALL
     </td>
   )
 }
