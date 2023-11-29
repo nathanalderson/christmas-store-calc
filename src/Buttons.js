@@ -22,7 +22,10 @@ function ButtonArea(props) {
             <Button setVals={props.setVals} val={7} display="14, 15, 16, 17" />
           </tr>
           <tr>
-            <Button setVals={props.setVals} val={10} display="18, 19, 20" />
+            <Button setVals={props.setVals} val={10} display="18, 19" />
+            <Button setVals={props.setVals} val={15} display="20" />
+          </tr>
+          <tr>
             <Other setVals={props.setVals} />
           </tr>
         </tbody>
@@ -65,7 +68,7 @@ function Other(props) {
   }
 
   return (
-    <td className="other">
+    <td className="other" colSpan="2">
       <form>
         <label>Amount:
           <div className="dollar">
